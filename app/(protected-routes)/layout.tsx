@@ -6,7 +6,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
+    <div className="flex gap-5 h-screen">
       <SideBarComponent />
       {children}
     </div>
