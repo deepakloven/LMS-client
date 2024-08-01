@@ -6,8 +6,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex gap-5 h-screen">
-      <SideBarComponent />
+    <div className="flex  h-screen">
+      <div className="w-60 md:block hidden">
+        <SideBarComponent />
+      </div>
+
       {children}
     </div>
   );
